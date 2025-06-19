@@ -1,0 +1,15 @@
+public class Fibonacci extends Progresion{ 
+    private long prev;
+    public Fibonacci() {
+        this(0);
+    }
+    public Fibonacci(long start){
+        super(start);
+        prev=1-start;
+    }
+    protected void avanzar(){
+        long temp=prev;
+        prev=valor;
+        valor+=temp;
+    }
+}
