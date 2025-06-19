@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner scanner= new Scanner(System.in);
+        //progresion aritmetica 
+        System.out.println("ingrese el valor inicial de la progresion aritmetica:");
+        long valorInicialAritmetica = scanner.nextLong();
+        System.out.println("ingrese el incremento de la progresion aritmetica:");
+        long incrementoAritmetica = scanner.nextLong();
+        System.out.println("ingrese la cantidad de terminos a imprimir:");
+        int terminosAritmetica = scanner.nextInt();
+        Aritmetica p2=new Aritmetica(incrementoAritmetica, valorInicialAritmetica);
+        p2.imprimirP(terminosAritmetica);
+        System.out.println();
+
+        //progresion geometrica
+        System.out.println("ingrese el valor inicial de la progresion geometrica:");
+        long valorInicialGeometrica = scanner.nextLong();
+        System.out.println("ingrese la base de la progresion geometrica:");
+        long baseGeometrica = scanner.nextLong();
+        System.out.println("ingrese la cantidad de terminos a imprimir:");
+        int terminosGeometrica = scanner.nextInt();
+        Geometrica p3=new Geometrica(baseGeometrica, valorInicialGeometrica);
+        p3.imprimirP(terminosGeometrica);
+        System.out.println();
+
+        //progresion fibonacci
+        System.out.println("ingrese la cantidad de terminos a imprimir de la progresion fibonacci:");
+        int terminosFibonacci = scanner.nextInt();
+        Fibonacci p4=new Fibonacci();
+        System.out.println("Progresion fibonacci:");
+        p4.imprimirP(terminosFibonacci);
+    }
+}
