@@ -1,0 +1,18 @@
+public class Aritmetica extends Progresion {
+    protected long incremento;
+    
+    public Aritmetica(){
+        this(1, 0);
+    }
+    public Aritmetica(long incremento) {
+        this(incremento, 0);
+    }
+    public Aritmetica(long incremento, long start) {
+        super(start);
+        this.incremento = incremento;
+    }
+    @Override
+    protected void avanzar() {
+        valor += incremento;
+    }
+}
